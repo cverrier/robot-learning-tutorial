@@ -212,7 +212,7 @@ Interestingly, when complemented with in-training human interventions, real-worl
 \paragraph{Sample-efficient RL}
 In an MDP, the optimal policy \( \pi^* \) can be derived from its associated \qfunction, \( Q^* \equiv Q_{\pi^*} \), and in particular the optimal action(s) \(\mu(\state)\) can be selected maximizing the optimal \qfunction \ over the action space,
 \[
-\mu(\state) = \max_{\action \in \mathcal A} Q^*(\state, \action).
+\mu(\state) = \arg \max_{\action \in \mathcal A} Q^*(\state, \action).
 \]
 Interestingly, the \qopt-function satisfies a recursive relationship (\emph{Bellman equation}) based on a very natural intuition%
 \footnote{Quote from~\citet{mnihPlayingAtariDeep2013}. The notation used has slightly been adapted for consistency with the rest of this tutorial.}:
